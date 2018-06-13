@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<li><a href="#">{{g.cms_user.username}}<span>[超级管理员]</span></a></li>
+<li><a href="{{url_for('cms.logout')}}">注销</a></li>
+{% extends 'cms/cms_base.html' %}
+
+{% block title %}
+   Zhang_derek论坛管理后台
+{% endblock %}
+
+{% block page_title %}
+   我的论坛
+{% endblock %}
+
+</body>
+</html>
